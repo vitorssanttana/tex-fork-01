@@ -1,5 +1,5 @@
 # Projeto classroom 
-![Javascript]([http://path/to/img.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png) "Javascript")
+![Javascript]([http://path/to/img.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/260px-Unofficial_JavaScript_logo_2.svg.png) "Javascript")
 
 > Aqui ficam os arquivos de apoio da sua aula
 <p>Com todos os arquivos</p>
