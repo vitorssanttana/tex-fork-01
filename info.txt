@@ -1,0 +1,8 @@
+LF = Line Feed (Pular para a pŕoxima linha)
+CR = Carriage Return (Retorna ao início da linha)
+CRLF (CR+LF)
+
+Windows (CR+LF)
+Linux (LF)
+
+faser de nbovo

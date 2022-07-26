@@ -1,0 +1,20 @@
+Dadas as variáveis e seus valores
+
+a1=3, nome=Pedro
+a2=4, nome=Maria
+a3=2, nome=Juliana
+a4=2, nome=Fernando
+a5=1, nome=Rita
+a6=5, nome=Roque
+
+
+Onde a1 até a6 representam a nota obtida por cada respectivo aluno após uma prova que teve como pontuação máxima 5 pontos
+
+Desafio: Escrever um programa que imprima os seguintes resultados:
+
+1. A média das notas dos alunos
+2. A taxa de acerto (porcentagem)
+3. O nome de um aluno aleatóriamente
+4. Os nomes de alunos com nota menor que 3 com status 'Reforço'
+5. Os nomes de alunos com nota maior que 4 com status 'Estágio'
+ 

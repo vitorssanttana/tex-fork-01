@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h1>Lógica de Programação  - Operadores</h1>
+        </body>
+        <script>
+            //Operadores
+            /*
+            [x]operadores de comparação
+            [x]operadores aritméticos
+            [x]acumulador
+            [x]incremento 
+            [x]decremento
+            [x]mod
+            [x]concatenação
+            [x]string literals
+            */
+           let x,y,z,w,k,soma,resultado,total,ac
+           x = 10
+           y = 5
+           z = false
+           w = 12
+           k = 13
+           soma = x+w
+           ac=0
+           resultado=x/y //2
+           ac=ac+resultado
+           resultado=x*y //50
+           ac=ac+resultado
+           resultado=y**2//25
+           ac=ac+resultado
+           total= 2+5 * 3+8 //25
+           total= (2+5) * (3+8) //77
+           //Acumulador/////
+
+           console.log("x igual y :" + (x == y))//false
+           console.log(`x maior ou igual y: ${(x >= y)}`)//true
+           console.log(y <= x)//true
+           console.log(x >= y && z)//false //&& (AND)
+           console.log(x >= y || z)//true  // || (OR)
+           console.log(`soma: ${soma}`)//22
+           console.log(`resultado: ${resultado}`)//25
+           console.log(`total: ${total}`)//77
+           console.log(`acumulador do resultado: ${ac}`)
+           console.log(`incremento de x: ${x++}`) //10
+           console.log(`incremento de x: ${x}`) //11
+           console.log(`decremento de y: ${--y}`) //4
+           console.log(`incremento de y: ${++y}`) //4 Alternativa y=y+1 ou y=y-1
+           console.log(total % 2)
+
+        </script>
+    </html>

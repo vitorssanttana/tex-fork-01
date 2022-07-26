@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h1>Lógica de Programação  - Strings</h1>
+        </body>
+        <script>
+            let a="a"
+            let b="b"
+            let h="h"
+            let y="y"
+
+            console.log(`b é maior que a: ${b>a}`)
+            console.log(`b é menor que a: ${b<a}`)
+            console.log(`h é menor que y: ${h<y}`)
+
+            let frase="Lógica com Javascript. Treine sua lógica"
+            let frase2="   Prática e repetição  "
+            let subfrase=frase.substring(0,6)
+            let subfrase2=frase.substring(11)
+            let txt=   frase.replace('Lógica','Aprendendo')
+            let txt1=  frase.replace(/JAVASCRIPT/i,'Programação')
+            let txt2=  frase.replace(/lógica/ig,'Programação')
+            let txt3 = frase2.trim()
+            let txt4 = frase2.trim().toUpperCase() //toLowerCase()
+            
+            console.log(subfrase)
+            console.log(subfrase2)
+            console.log("++++++++++++++++++")
+            console.log(txt)
+            console.log(txt1)
+            console.log("++++++++++++++++++")
+            console.log(txt2)
+            console.log(txt4)
+            console.log("++++++++++++++++++")
+            console.log(`Com espaços no início e no final :${frase2}`)
+            console.log(`Espaços removidos no início e no final :${txt3}`)
+            
+
+            let mensagem= "Treinamento de fullStack"
+            let email="analuisa@meuemail.com.br"
+            let buscaArroba=email.indexOf('@')//13
+            console.log(buscaArroba)
+            let nomeUser=email.substring(0,buscaArroba)
+            console.log(nomeUser)
+            let txt5 = txt3.concat(" - ",mensagem)
+            console.log(txt5)
+            let txt6 = mensagem.padStart(mensagem.length+3,"+")//padEnd
+            console.log(txt6)
+            let numero = 5
+            let txt7 = numero.toString().padEnd(4,'0')
+            let alfa = "abcdefghijklmnopqrstuvxywz"
+            console.log(alfa[3],alfa[0],mensagem[0])
+         </script>
+        </html>

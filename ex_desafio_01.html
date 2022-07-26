@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h1>Lógica de Programação  - Desafio</h1>
+        </body>
+        <script>
+            /*
+            Dadas as variáveis e seus valores
+
+a1=3, nome=Pedro
+a2=4, nome=Maria
+a3=2, nome=Juliana
+a4=2, nome=Fernando
+a5=1, nome=Rita
+a6=5, nome=Roque
+
+
+Onde a1 até a6 representam a nota obtida por cada respectivo aluno após uma prova que teve como pontuação máxima 5 pontos
+
+Desafio: Escrever um programa que imprima os seguintes resultados:
+
+1. A média das notas dos alunos - ok
+2. A taxa de acerto (porcentagem) - ok
+3. O nome de um aluno aleatóriamente - ok
+4. Os nomes de alunos com nota menor que 3 com status 'Reforço' - ok
+5. Os nomes de alunos com nota maior que 4 com status 'Estágio' - ok
+            */
+           let a1,a2,a3,a4,a5,a6,nome,total,pontuacao,sorteio,statusMsg
+           a1=3
+           a2=4
+           a3=5
+           a4=2
+           a5=1
+           a6=5
+           pontuacao=5
+           total=a1+a2+a3+a4+a5+a6 //soma de todas as notas
+            
+           //Cálculo da média de notas
+           function media(){
+                return (total/6).toFixed(2)
+           }
+           //Cálculo da porcentagem
+           function taxaDeAcerto(){
+           return (media() / pontuacao) *100
+           }
+           sorteio = parseInt(Math.random()*6) + 1
+           console.log(sorteio)
+           
+
+           function sorteiaNome(n){
+            switch(n){
+                case 1: 
+                nome="Pedro"
+                break;
+                case 2: 
+                nome="Maria"
+                break;
+                case 3: 
+                nome="Juliana"
+                break;
+                case 4: 
+                nome="Fernando"
+                break;
+                case 5: 
+                nome="Rita"
+                break;
+                case 6: 
+                nome="Roque"
+                break;
+            }
+            return nome
+           }
+
+           function statusAluno(nota,n){
+          
+            switch(n){
+                case 1: 
+                nome="Pedro"
+                break;
+                case 2: 
+                nome="Maria"
+                break;
+                case 3: 
+                nome="Juliana"
+                break;
+                case 4: 
+                nome="Fernando"
+                break;
+                case 5: 
+                nome="Rita"
+                break;
+                case 6: 
+                nome="Roque"
+                break;
+            }
+            if(nota <3) console.log(`${nome} vai para Reforço`)
+            if(nota >4) console.log(`${nome} vai para Estágio`)
+           }
+
+           
+
+           //Saída de impressão - OutPut
+           console.log(`A média das notas é: ${media()}`)
+           console.log(`A taxa de acerto é: ${taxaDeAcerto().toFixed(2)}%`)
+           console.log(`O aluno escolhido é: ${sorteiaNome(sorteio)}`)
+           statusAluno(a1,1)//false
+           statusAluno(a2,2)//false
+           statusAluno(a3,3)//true
+           statusAluno(a4,4)//true
+           statusAluno(a5,5)//true
+           statusAluno(a6,6)//true
+           
+
+
+        </script>
+        </html>

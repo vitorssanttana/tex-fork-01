@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h1>Lógica de Programação  - Desafio</h1>
+        </body>
+        <script>
+        
+           //Dadas as variáveis
+
+            // numDaSorte,mensagem
+            
+            // Onde numdaSorte é um número aleatório resultado da chamada de uma função que parametriza outro número que tem como objetivo ser o mesmo do número sorteado
+            
+            // Desafio: 
+            
+            // 1.Escrever um programa que execute o número aleatório uma única vez ok
+            // 2. Chamar a função por intermédio do console do navegador, passando um numero de palpite do número sorteado
+            
+            // 3. Escrever três alternativas para mensagem: 
+            
+            // a. 'Tente um número menor'
+            // b. 'Tente um número maior'
+            // c. 'Parabéns você acertou'
+            
+            // 4. O limite de tentativas é 6. Quando as tentativas se esgotarem escreva na mensagem:
+            // 'Não foi dessa vez'
+            
+            // Dica: Para testar o desafio no console não recarregue a página! Apenas pressione enter após escrever a chamada da função.
+            
+            let numDaSorte,mensagem,acumula
+            acumula=0
+
+            function sorteio(){
+                numDaSorte = parseInt(Math.random()*100)+1
+                //return numDaSorte
+            }
+            function palpite(n){
+                if(acumula == 6){
+                    mensagem = "Tentativas esgotadas!"
+                }else{
+                //Jogo do palpite/////
+                if(numDaSorte > n){
+                    mensagem = "Tente um número maior"
+                }else if(numDaSorte < n){
+                    mensagem = "Tente um número menor"
+                }else if (numDaSorte == n){
+                    mensagem = "Você ganhou!"
+                }
+                else{
+                    mensagem = "Não foi dessa vez :("
+                }//end jogo////
+            }
+                acumula++
+                return mensagem
+            }
+            
+            </script>
+
+        </html>

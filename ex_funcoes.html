@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Aula Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h1>Lógica de Programação  - Funções</h1>
+        </body>
+        <script>
+/*
+[x]funções de retorno
+[]funções com parâmetros
+[] funções encadeadas
+*/
+let x,y,mensagem,nome
+x = 34
+y = 12
+//mensagem="Front End"
+mensagem="Back End"
+
+function soma (){
+    console.log(`x + y :${x+y}`)
+}
+soma()
+
+function info(){
+    if(mensagem == "Front End"){
+        nome="Pedro"
+        let imprime=`Olá ${nome}, bem vindo ao treinamento de ${mensagem}`
+        console.log(imprime)
+    }
+    else if(mensagem == "Back End"){
+        nome="Pedro"
+        let imprime=`Olá ${nome}, bem vindo ao treinamento de ${mensagem}`
+        console.log(imprime)
+    }
+}
+info()
+
+function saudacao(){
+   var bemVindo="Olá, vamos começar nossa aula?"
+   return bemVindo
+}
+function multiplica(){
+    return `x * y : ${x*y}`
+}
+ console.log(saudacao())
+ console.log(multiplica())
+ 
+ function calculo(x,y){
+    console.log(`${x} / ${y} : ${(x / y)}`)
+ }
+ calculo(10,5)
+ calculo(34,4)
+
+ function calculadora(op,x,y,mensagem){
+    switch(op){
+        case 1: 
+        console.log(`${x} + ${y}: ${(x+y)}`)
+        //mensagem = "Soma"
+        console.log(mensagem)
+        break;
+        case 2: 
+        console.log(`${x} - ${y}: ${(x-y)}`)
+        //mensagem = "Subtração"
+        console.log(mensagem)
+        break;
+    }
+ }
+ calculadora(2,40,32," - Subtraindo")
+ calculadora(1,120,34," + Somando")
+
+ function livraria(nome){
+    console.log(`Nossa livraria se chama ${nome}`)
+        function autor(escritor){
+            console.log(`Convidamos a noite de autógrafos do escritor ${escritor}`)
+        }
+       return autor 
+ }
+ livraria("Dos Amigos")("Fernando Lima")
+
+ function A (x){
+    console.log(`Função A - x: ${x}`)
+        function B (y){
+            console.log(`Função B - x: ${x} - y: ${y}`)
+            function C(z){
+                console.log(`Função C - x: ${x} - y: ${y} - z: ${z}`)
+            }
+            C(2)
+        }
+        B(4)
+ }
+ A(1)
+ 
+</script>

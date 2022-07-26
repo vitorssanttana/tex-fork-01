@@ -1,0 +1,57 @@
+Desafio: Faça um fluxograma do seguinte algoritmo:
+
+
+Dadas as variáveis
+
+a=12, b=45, c= 7
+
+Crie um programa que leia as variáveis A, B e C e imprima os resultados em ordem descrescente
+
+
+function calculo(x,y){
+    return `${x} / ${y} :${x / y}`
+ }
+
+ console.log(calculo(10,5))
+ console.log(calculo(46,4))
+
+ function calculadora(op,x,y,mensagem){
+    var resultado= 0
+    switch(op){
+        case 1: 
+        resultado = x+y
+        //mensagem="soma"
+        break;
+        case 2: 
+        resultado = x-y
+        //mensagem="subtração"
+        break;
+    }
+    console.log(mensagem + " = " + resultado)
+ }
+ calculadora(1,10,40,"somando 10 + 40")
+ calculadora(2,40,10,"subtraindo 40 - 10")
+
+ function livraria(nome){
+    console.log(`Nossa livraria se chama ${nome}`)
+
+    function autor(escritor){
+        console.log(`Convidamos para a noite de autógrafos do escritor ${escritor}`)
+    }
+    return autor
+ }
+ livraria("Dos Amigos")("Fernando Lima")
+
+ function A (x){
+    console.log(`função A x: ${x}`)
+    function B(y){
+        console.log(`função B x:${x} y: ${y}`)
+        
+        function C (z){
+        console.log(`funcão C x:${x} y: ${y} z: ${z}`)
+        }
+        C(2)
+    }
+    B(4)
+ }
+ A(1)

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <h1>Lógica de Programação  - Condicionais</h1>
+        </body>
+        <script>
+/*
+[x] if
+[x] if else
+[x] if else if
+[x] ternário
+[] switch
+*/
+
+var modulo=0
+let mensagem="Condicionais"
+//let mensagem="Operadores"
+//IF
+if(mensagem == "Condicionais") {
+   console.log(`A aula de hoje é: ${mensagem}`)
+}
+//IF ELSE
+if(mensagem == "Condicionais") {
+   console.log(`A aula de hoje é: ${mensagem}`)
+}else{
+   console.log("Aguarde a próxima aula: Condicionais")
+}
+//IF Encadeado
+if(mensagem == "Condicionais") {
+   console.log(`A aula de hoje é: ${mensagem}`)
+}else{
+   console.log("Aguarde a próxima aula: Condicionais")
+   if(modulo >=2){
+    console.log("Você está no módulo " + modulo)
+   }
+}
+
+if (modulo>=2) console.log("Você está avançando!")
+
+//IF ELSE IF
+if(mensagem != "Condicionais") {
+   console.log(`A aula de hoje é especial: ${mensagem}`)
+}//false
+else if(modulo <2){
+    console.log("Bem vindo iniciante")
+}//false
+else if(mensagem == "Condicionais" && modulo <2){
+    console.log("Bora Programar!")
+}//false
+else{
+    console.log("Tudo ok!")
+}
+
+//Ternário
+modulo >=2 ? console.log("Você está indo bem!") : console.log("Olá Iniciante, conte conosco!")
+
+//SWITCH CASE
+switch(modulo){
+    case 1: 
+    console.log("Módulo Fundamentos")
+    break;
+    case 2: 
+    console.log("Módulo Lógica")
+    break;
+    case 3: 
+    console.log("Módulo Developer")
+    break;
+    default: 
+    console.log("Não há módulos em atividade")
+
+   
+}
+</script>
