@@ -3,6 +3,8 @@
 
 > Aqui ficam os arquivos de apoio da sua aula
  ---
+ 
+ ### Tipos de Arquivo
  - html (.html)
  - javascript (.js)
  - typescript (.ts)
