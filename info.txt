@@ -5,4 +5,7 @@ CRLF (CR+LF)
 Windows (CR+LF)
 Linux (LF)
 
-faser de nbovo
+
+
+
+
